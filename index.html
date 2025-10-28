@@ -488,7 +488,7 @@
         <h4>📌 학생 게시판 정보</h4>
         <ul class="spec">
           <li><div class="k">기능명</div><div class="v">학생 게시판 (GuestBook Module)</div></li>
-          <li><div class="k">버전</div><div class="v"><code>20251028_1245</code></div></li>
+          <li><div class="k">버전</div><div class="v"><code>20251028_1246</code></div></li>
           <li><div class="k">앱 이름</div><div class="v"><code>GuestBook_School</code></div></li>
           <li><div class="k">주요 사용자</div><div class="v">교사 (관리자), 학생 (일반 사용자)</div></li>
         </ul>
@@ -553,7 +553,7 @@
               <p style="font-size:13px;color:#92400e;font-weight:700;margin-bottom:8px;">📝 작성 제한</p>
               <ul style="margin:0;padding-left:18px;font-size:13px;color:#78350f;line-height:1.8;">
                 <li>최대 200자</li>
-                <li>60초 작성 간격</li>
+                <li>30초 작성 간격</li>
                 <li>비속어 자동 차단</li>
               </ul>
             </div>
@@ -696,6 +696,60 @@
           <strong>⚠️ 주의:</strong> 전체 초기화는 되돌릴 수 없으므로, 반드시 기록 다운로드 후 실행하시기 바랍니다.
         </p>
       </article>
+
+      <article class="card" style="margin-top:40px;border:2px solid var(--brand-lighter);background:linear-gradient(135deg,#fefefe,#f9f8ff);">
+        <div style="display:flex;align-items:center;gap:12px;margin-bottom:20px;">
+          <div style="width:48px;height:48px;background:linear-gradient(135deg,#8b5cf6,#7c3aed);border-radius:12px;display:flex;align-items:center;justify-content:center;font-size:24px;">🎯</div>
+          <h3 style="margin:0;">한 맵에 여러 게시판 설치하기</h3>
+        </div>
+        
+        <p style="color:var(--text-muted);margin-bottom:24px;line-height:1.8;">
+          <strong><a href="https://docs.channel.io/zep-guide/ko/articles/%EC%97%90%EB%94%94%ED%84%B0-%EA%B8%B0%EC%B4%88-%EA%B0%80%EC%9D%B4%EB%93%9C-c9e20c51" target="_blank" style="color:var(--brand);text-decoration:underline;">ZEP 맵 에디터</a></strong>에서 <strong>여러 개의 독립적인 학생 게시판</strong>을 설치할 수 있습니다. 
+          예를 들어, 학급별 게시판, 주제별 게시판, 공지 전용 게시판 등을 각각 만들어 운영할 수 있습니다.
+        </p>
+
+        <div class="steps">
+          <div class="step">
+            <h4>게시판 오브젝트 배치</h4>
+            <p><strong><a href="https://docs.channel.io/zep-guide/ko/articles/%EC%97%90%EB%94%94%ED%84%B0-%EA%B8%B0%EC%B4%88-%EA%B0%80%EC%9D%B4%EB%93%9C-c9e20c51" target="_blank" style="color:var(--brand);">ZEP 맵 에디터</a></strong>에서 학생 게시판 기능을 사용할 오브젝트를 원하는 위치에 배치합니다.</p>
+          </div>
+          
+          <div class="step">
+            <h4>ZEP 스크립트 네임 설정</h4>
+            <p>각 오브젝트를 선택하고, <strong>ZEP 스크립트 네임</strong> 항목에 고유한 번호를 부여합니다.</p>
+            
+            <img src="zep_multiple_guestbook_setup.png" alt="ZEP 맵 에디터에서 여러 게시판 설정하기" style="width:100%;border-radius:12px;margin:16px 0;box-shadow:0 4px 12px rgba(0,0,0,.1);border:1px solid var(--border);">
+            
+            <div style="background:white;padding:16px;border-radius:8px;margin-top:12px;border:1px solid var(--border);">
+              <p style="font-size:14px;margin-bottom:8px;color:var(--text-muted);">설정 예시:</p>
+              <ul style="margin:0;padding-left:20px;font-size:14px;line-height:2;">
+                <li>첫 번째 게시판: <code style="background:var(--brand-lighter);color:var(--brand);padding:4px 8px;border-radius:4px;font-weight:600;">guestbook_1</code></li>
+                <li>두 번째 게시판: <code style="background:var(--brand-lighter);color:var(--brand);padding:4px 8px;border-radius:4px;font-weight:600;">guestbook_2</code></li>
+                <li>세 번째 게시판: <code style="background:var(--brand-lighter);color:var(--brand);padding:4px 8px;border-radius:4px;font-weight:600;">guestbook_3</code></li>
+              </ul>
+            </div>
+          </div>
+          
+          <div class="step">
+            <h4>개별 게시판 운영</h4>
+            <p>각 게시판은 독립적으로 작동하며, 게시물, 공지사항, 설정이 별도로 관리됩니다.</p>
+          </div>
+        </div>
+
+        <div style="background:linear-gradient(135deg,#e0f2fe,#bae6fd);border-radius:12px;padding:20px;margin-top:24px;border-left:4px solid #0ea5e9;">
+          <p style="font-weight:600;margin-bottom:12px;color:#0c4a6e;font-size:15px;">💡 활용 예시</p>
+          <ul style="margin:0;padding-left:20px;color:#0c4a6e;line-height:1.8;font-size:14px;">
+            <li><strong>학급별 게시판:</strong> 1반 게시판, 2반 게시판, 3반 게시판</li>
+            <li><strong>주제별 게시판:</strong> 공지사항, 자유게시판, 질문게시판</li>
+            <li><strong>교과별 게시판:</strong> 국어 게시판, 수학 게시판, 영어 게시판</li>
+            <li><strong>용도별 게시판:</strong> 출석 체크, 과제 제출, 소감문 작성</li>
+          </ul>
+        </div>
+
+        <p class="note" style="margin-top:20px;">
+          <strong>💡 Tip:</strong> 스크립트 네임은 게시판을 구분하는 고유 식별자이므로, 반드시 각 오브젝트마다 다른 이름을 부여해야 합니다.
+        </p>
+      </article>
     </section>
 
     <!-- 학생 사용 방법 -->
@@ -717,7 +771,7 @@
             </li>
             <li>
               <div class="k">작성 간격</div>
-              <div class="v">게시물 작성 후 <strong>60초</strong> 동안은 다시 작성할 수 없습니다. (도배 방지)</div>
+              <div class="v">게시물 작성 후 <strong>30초</strong> 동안은 다시 작성할 수 없습니다. (도배 방지)</div>
             </li>
             <li>
               <div class="k">비속어 필터</div>
@@ -774,7 +828,7 @@
         <div class="solution">
           <strong>가능한 원인 및 해결 방법:</strong>
           <ul style="margin:8px 0 0 20px;line-height:1.8;">
-            <li><strong>60초 작성 간격:</strong> 이전 게시물 작성 후 60초가 지나지 않았을 수 있습니다. 잠시 기다린 후 다시 시도해주세요.</li>
+            <li><strong>30초 작성 간격:</strong> 이전 게시물 작성 후 30초가 지나지 않았을 수 있습니다. 잠시 기다린 후 다시 시도해주세요.</li>
             <li><strong>비속어 포함:</strong> 작성 내용에 부적절한 표현이 포함되어 자동으로 차단되었을 수 있습니다. 내용을 수정한 후 다시 작성해주세요.</li>
             <li><strong>게시물 수 초과:</strong> 무료 플랜의 최대 게시물 수(50개)를 초과했을 수 있습니다. 불필요한 게시물을 삭제하거나 Pro 플랜을 구독하세요.</li>
           </ul>
