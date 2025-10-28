@@ -716,17 +716,33 @@
           
           <div class="step">
             <h4>ZEP 스크립트 네임 설정</h4>
-            <p>각 오브젝트를 선택하고, <strong>ZEP 스크립트 네임</strong> 항목에 고유한 번호를 부여합니다.</p>
+            <p>각 오브젝트를 선택하고, <strong>오브젝트 설정</strong> 패널에서 다음 항목을 설정합니다.</p>
             
             <img src="zep_multiple_guestbook_setup.png" alt="ZEP 맵 에디터에서 여러 게시판 설정하기" style="width:100%;border-radius:12px;margin:16px 0;box-shadow:0 4px 12px rgba(0,0,0,.1);border:1px solid var(--border);">
             
-            <div style="background:white;padding:16px;border-radius:8px;margin-top:12px;border:1px solid var(--border);">
-              <p style="font-size:14px;margin-bottom:8px;color:var(--text-muted);">설정 예시:</p>
-              <ul style="margin:0;padding-left:20px;font-size:14px;line-height:2;">
-                <li>첫 번째 게시판: <code style="background:var(--brand-lighter);color:var(--brand);padding:4px 8px;border-radius:4px;font-weight:600;">guestbook_1</code></li>
-                <li>두 번째 게시판: <code style="background:var(--brand-lighter);color:var(--brand);padding:4px 8px;border-radius:4px;font-weight:600;">guestbook_2</code></li>
-                <li>세 번째 게시판: <code style="background:var(--brand-lighter);color:var(--brand);padding:4px 8px;border-radius:4px;font-weight:600;">guestbook_3</code></li>
-              </ul>
+            <div style="background:white;padding:20px;border-radius:8px;margin-top:12px;border:1px solid var(--border);">
+              <div style="margin-bottom:20px;">
+                <p style="font-size:15px;font-weight:600;margin-bottom:12px;color:var(--text);">📝 설정 항목</p>
+                
+                <div style="background:var(--bg);padding:14px;border-radius:6px;margin-bottom:12px;border-left:4px solid var(--brand);">
+                  <p style="font-size:14px;font-weight:600;color:var(--text);margin-bottom:6px;">값 (선택 사항)</p>
+                  <p style="font-size:13px;color:var(--text-muted);line-height:1.6;">
+                    <code style="background:var(--brand-lighter);color:var(--brand);padding:3px 8px;border-radius:4px;font-weight:600;">OpenApp:GuestBook</code>를 입력하세요.
+                  </p>
+                </div>
+                
+                <div style="background:#fef3c7;padding:14px;border-radius:6px;border-left:4px solid #f59e0b;">
+                  <p style="font-size:14px;font-weight:600;color:#92400e;margin-bottom:6px;">번호 (필수)</p>
+                  <p style="font-size:13px;color:#78350f;line-height:1.6;margin-bottom:8px;">
+                    숫자를 입력합니다. 입력한 번호별로 보드 데이터가 개별적으로 관리됩니다.
+                  </p>
+                  <ul style="margin:0;padding-left:20px;font-size:13px;color:#78350f;line-height:1.8;">
+                    <li>첫 번째 게시판: <code style="background:#fff;color:#92400e;padding:3px 8px;border-radius:4px;font-weight:600;border:1px solid #fbbf24;">1</code></li>
+                    <li>두 번째 게시판: <code style="background:#fff;color:#92400e;padding:3px 8px;border-radius:4px;font-weight:600;border:1px solid #fbbf24;">2</code></li>
+                    <li>세 번째 게시판: <code style="background:#fff;color:#92400e;padding:3px 8px;border-radius:4px;font-weight:600;border:1px solid #fbbf24;">3</code></li>
+                  </ul>
+                </div>
+              </div>
             </div>
           </div>
           
@@ -747,7 +763,7 @@
         </div>
 
         <p class="note" style="margin-top:20px;">
-          <strong>💡 Tip:</strong> 스크립트 네임은 게시판을 구분하는 고유 식별자이므로, 반드시 각 오브젝트마다 다른 이름을 부여해야 합니다.
+          <strong>💡 Tip:</strong> 번호 필드는 게시판을 구분하는 고유 식별자이므로, 반드시 각 오브젝트마다 다른 번호를 입력해야 합니다.
         </p>
       </article>
     </section>
