@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>ZEP 학생 게시판 교사용 가이드</title>
+  <title>ZEP 학생 게시판 사용 가이드</title>
   <style>
     /* 기본 설정 */
     :root{
@@ -512,46 +512,46 @@
     <section id="features">
       <h2>01. 핵심 기능 요약</h2>
       
-      <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:24px;">
+      <div style="display:grid;grid-template-columns:repeat(2,1fr);gap:32px;max-width:900px;margin:0 auto;">
         
         <!-- 학생 카드 -->
-        <article style="background:white;border:2px solid #e5e7eb;border-radius:16px;padding:32px;box-shadow:0 2px 8px rgba(0,0,0,.08);transition:all 0.3s ease;position:relative;">
-          <div style="position:absolute;top:16px;right:16px;background:#dbeafe;color:#1e40af;padding:6px 12px;border-radius:20px;font-size:12px;font-weight:600;">학생</div>
+        <article style="background:white;border:2px solid #e5e7eb;border-radius:16px;padding:36px;box-shadow:0 2px 8px rgba(0,0,0,.08);transition:all 0.3s ease;position:relative;">
+          <div style="position:absolute;top:16px;right:16px;background:#dbeafe;color:#1e40af;padding:6px 14px;border-radius:20px;font-size:12px;font-weight:600;">학생</div>
           
-          <div style="margin-bottom:24px;">
-            <div style="width:48px;height:48px;background:linear-gradient(135deg,#60a5fa,#3b82f6);border-radius:12px;display:flex;align-items:center;justify-content:center;font-size:24px;margin-bottom:16px;">👨‍🎓</div>
-            <h3 style="font-size:24px;font-weight:700;margin-bottom:8px;">학생 권한</h3>
-            <p style="color:#6b7280;font-size:14px;">일반 사용자 기능</p>
+          <div style="margin-bottom:28px;">
+            <div style="width:56px;height:56px;background:linear-gradient(135deg,#60a5fa,#3b82f6);border-radius:14px;display:flex;align-items:center;justify-content:center;font-size:28px;margin-bottom:16px;box-shadow:0 4px 12px rgba(59,130,246,.2);">👨‍🎓</div>
+            <h3 style="font-size:26px;font-weight:700;margin-bottom:8px;">학생 권한</h3>
+            <p style="color:#6b7280;font-size:15px;">일반 사용자 기능</p>
           </div>
           
-          <div style="border-top:2px solid #f3f4f6;padding-top:20px;">
-            <div style="margin-bottom:16px;">
-              <div style="display:flex;align-items:center;gap:8px;margin-bottom:8px;">
-                <span style="color:#10b981;font-size:18px;font-weight:bold;">✓</span>
-                <strong style="font-size:14px;">게시물 작성</strong>
+          <div style="border-top:2px solid #f3f4f6;padding-top:24px;">
+            <div style="margin-bottom:18px;">
+              <div style="display:flex;align-items:center;gap:10px;margin-bottom:8px;">
+                <span style="color:#10b981;font-size:20px;font-weight:bold;">✓</span>
+                <strong style="font-size:15px;">게시물 작성</strong>
               </div>
-              <p style="color:#6b7280;font-size:13px;margin-left:26px;line-height:1.5;">작성 후 교사 승인 필요</p>
+              <p style="color:#6b7280;font-size:13px;margin-left:30px;line-height:1.6;">작성 후 교사 승인 필요</p>
             </div>
             
-            <div style="margin-bottom:16px;">
-              <div style="display:flex;align-items:center;gap:8px;margin-bottom:8px;">
-                <span style="color:#10b981;font-size:18px;font-weight:bold;">✓</span>
-                <strong style="font-size:14px;">본인 글 삭제</strong>
+            <div style="margin-bottom:18px;">
+              <div style="display:flex;align-items:center;gap:10px;margin-bottom:8px;">
+                <span style="color:#10b981;font-size:20px;font-weight:bold;">✓</span>
+                <strong style="font-size:15px;">본인 글 삭제</strong>
               </div>
-              <p style="color:#6b7280;font-size:13px;margin-left:26px;line-height:1.5;">자신이 작성한 글만 삭제 가능</p>
+              <p style="color:#6b7280;font-size:13px;margin-left:30px;line-height:1.6;">자신이 작성한 글만 삭제 가능</p>
             </div>
             
-            <div style="margin-bottom:16px;">
-              <div style="display:flex;align-items:center;gap:8px;margin-bottom:8px;">
-                <span style="color:#10b981;font-size:18px;font-weight:bold;">✓</span>
-                <strong style="font-size:14px;">공지사항 확인</strong>
+            <div style="margin-bottom:18px;">
+              <div style="display:flex;align-items:center;gap:10px;margin-bottom:8px;">
+                <span style="color:#10b981;font-size:20px;font-weight:bold;">✓</span>
+                <strong style="font-size:15px;">공지사항 확인</strong>
               </div>
-              <p style="color:#6b7280;font-size:13px;margin-left:26px;line-height:1.5;">교사가 등록한 공지 조회</p>
+              <p style="color:#6b7280;font-size:13px;margin-left:30px;line-height:1.6;">교사가 등록한 공지 조회</p>
             </div>
             
-            <div style="background:#fef3c7;border-radius:8px;padding:12px;margin-top:16px;">
-              <p style="font-size:12px;color:#92400e;font-weight:600;margin-bottom:4px;">📝 작성 제한</p>
-              <ul style="margin:0;padding-left:16px;font-size:12px;color:#92400e;line-height:1.6;">
+            <div style="background:linear-gradient(135deg,#fef3c7,#fde68a);border-radius:10px;padding:16px;margin-top:20px;">
+              <p style="font-size:13px;color:#92400e;font-weight:700;margin-bottom:8px;">📝 작성 제한</p>
+              <ul style="margin:0;padding-left:18px;font-size:13px;color:#78350f;line-height:1.8;">
                 <li>최대 200자</li>
                 <li>60초 작성 간격</li>
                 <li>비속어 자동 차단</li>
@@ -561,106 +561,64 @@
         </article>
         
         <!-- 교사 카드 (강조) -->
-        <article style="background:linear-gradient(135deg,#f5f3ff,#ede9fe);border:3px solid #8b5cf6;border-radius:16px;padding:32px;box-shadow:0 4px 20px rgba(139,92,246,.2);transition:all 0.3s ease;position:relative;">
-          <div style="position:absolute;top:-12px;right:20px;background:linear-gradient(135deg,#8b5cf6,#7c3aed);color:white;padding:8px 16px;border-radius:20px;font-size:12px;font-weight:700;box-shadow:0 4px 12px rgba(139,92,246,.3);">✨ 관리자</div>
+        <article style="background:linear-gradient(135deg,#f5f3ff,#ede9fe);border:3px solid #8b5cf6;border-radius:16px;padding:36px;box-shadow:0 4px 20px rgba(139,92,246,.25);transition:all 0.3s ease;position:relative;">
+          <div style="position:absolute;top:-14px;right:24px;background:linear-gradient(135deg,#8b5cf6,#7c3aed);color:white;padding:8px 18px;border-radius:20px;font-size:13px;font-weight:700;box-shadow:0 4px 12px rgba(139,92,246,.4);">✨ 관리자</div>
           
-          <div style="margin-bottom:24px;">
-            <div style="width:48px;height:48px;background:linear-gradient(135deg,#a78bfa,#8b5cf6);border-radius:12px;display:flex;align-items:center;justify-content:center;font-size:24px;margin-bottom:16px;">👨‍🏫</div>
-            <h3 style="font-size:24px;font-weight:700;margin-bottom:8px;color:#7c3aed;">교사 권한</h3>
-            <p style="color:#6b7280;font-size:14px;">모든 관리 기능 사용 가능</p>
+          <div style="margin-bottom:28px;">
+            <div style="width:56px;height:56px;background:linear-gradient(135deg,#a78bfa,#8b5cf6);border-radius:14px;display:flex;align-items:center;justify-content:center;font-size:28px;margin-bottom:16px;box-shadow:0 4px 12px rgba(139,92,246,.3);">👨‍🏫</div>
+            <h3 style="font-size:26px;font-weight:700;margin-bottom:8px;color:#7c3aed;">교사 권한</h3>
+            <p style="color:#6b7280;font-size:15px;">모든 관리 기능 사용 가능</p>
           </div>
           
-          <div style="border-top:2px solid rgba(139,92,246,.2);padding-top:20px;">
-            <div style="margin-bottom:16px;">
-              <div style="display:flex;align-items:center;gap:8px;margin-bottom:8px;">
-                <span style="color:#8b5cf6;font-size:18px;font-weight:bold;">✓</span>
-                <strong style="font-size:14px;">게시물 작성</strong>
+          <div style="border-top:2px solid rgba(139,92,246,.25);padding-top:24px;">
+            <div style="margin-bottom:18px;">
+              <div style="display:flex;align-items:center;gap:10px;margin-bottom:8px;">
+                <span style="color:#8b5cf6;font-size:20px;font-weight:bold;">✓</span>
+                <strong style="font-size:15px;">게시물 작성</strong>
               </div>
-              <p style="color:#6b7280;font-size:13px;margin-left:26px;line-height:1.5;">즉시 승인되어 게시</p>
+              <p style="color:#6b7280;font-size:13px;margin-left:30px;line-height:1.6;">즉시 승인되어 게시</p>
             </div>
             
-            <div style="margin-bottom:16px;">
-              <div style="display:flex;align-items:center;gap:8px;margin-bottom:8px;">
-                <span style="color:#8b5cf6;font-size:18px;font-weight:bold;">✓</span>
-                <strong style="font-size:14px;">모든 글 관리</strong>
+            <div style="margin-bottom:18px;">
+              <div style="display:flex;align-items:center;gap:10px;margin-bottom:8px;">
+                <span style="color:#8b5cf6;font-size:20px;font-weight:bold;">✓</span>
+                <strong style="font-size:15px;">모든 글 관리</strong>
               </div>
-              <p style="color:#6b7280;font-size:13px;margin-left:26px;line-height:1.5;">승인, 거부, 삭제 가능</p>
+              <p style="color:#6b7280;font-size:13px;margin-left:30px;line-height:1.6;">승인, 거부, 삭제 가능</p>
             </div>
             
-            <div style="margin-bottom:16px;">
-              <div style="display:flex;align-items:center;gap:8px;margin-bottom:8px;">
-                <span style="color:#8b5cf6;font-size:18px;font-weight:bold;">✓</span>
-                <strong style="font-size:14px;">상단 고정</strong>
+            <div style="margin-bottom:18px;">
+              <div style="display:flex;align-items:center;gap:10px;margin-bottom:8px;">
+                <span style="color:#8b5cf6;font-size:20px;font-weight:bold;">✓</span>
+                <strong style="font-size:15px;">상단 고정</strong>
               </div>
-              <p style="color:#6b7280;font-size:13px;margin-left:26px;line-height:1.5;">중요 게시물 고정 표시</p>
+              <p style="color:#6b7280;font-size:13px;margin-left:30px;line-height:1.6;">중요 게시물 고정 표시</p>
             </div>
             
-            <div style="margin-bottom:16px;">
-              <div style="display:flex;align-items:center;gap:8px;margin-bottom:8px;">
-                <span style="color:#8b5cf6;font-size:18px;font-weight:bold;">✓</span>
-                <strong style="font-size:14px;">공지사항 관리</strong>
+            <div style="margin-bottom:18px;">
+              <div style="display:flex;align-items:center;gap:10px;margin-bottom:8px;">
+                <span style="color:#8b5cf6;font-size:20px;font-weight:bold;">✓</span>
+                <strong style="font-size:15px;">공지사항 관리</strong>
               </div>
-              <p style="color:#6b7280;font-size:13px;margin-left:26px;line-height:1.5;">공지 작성 및 수정 (최대 80자)</p>
+              <p style="color:#6b7280;font-size:13px;margin-left:30px;line-height:1.6;">공지 작성 및 수정 (최대 80자)</p>
             </div>
             
-            <div style="margin-bottom:16px;">
-              <div style="display:flex;align-items:center;gap:8px;margin-bottom:8px;">
-                <span style="color:#8b5cf6;font-size:18px;font-weight:bold;">✓</span>
-                <strong style="font-size:14px;">전체 초기화</strong>
+            <div style="margin-bottom:18px;">
+              <div style="display:flex;align-items:center;gap:10px;margin-bottom:8px;">
+                <span style="color:#8b5cf6;font-size:20px;font-weight:bold;">✓</span>
+                <strong style="font-size:15px;">전체 초기화</strong>
               </div>
-              <p style="color:#6b7280;font-size:13px;margin-left:26px;line-height:1.5;">모든 게시물 삭제</p>
-            </div>
-          </div>
-        </article>
-        
-        <!-- Pro 플랜 카드 -->
-        <article style="background:white;border:2px solid #fbbf24;border-radius:16px;padding:32px;box-shadow:0 2px 8px rgba(0,0,0,.08);transition:all 0.3s ease;position:relative;">
-          <div style="position:absolute;top:16px;right:16px;background:linear-gradient(135deg,#fbbf24,#f59e0b);color:white;padding:6px 12px;border-radius:20px;font-size:12px;font-weight:600;">Pro</div>
-          
-          <div style="margin-bottom:24px;">
-            <div style="width:48px;height:48px;background:linear-gradient(135deg,#fbbf24,#f59e0b);border-radius:12px;display:flex;align-items:center;justify-content:center;font-size:24px;margin-bottom:16px;">👑</div>
-            <h3 style="font-size:24px;font-weight:700;margin-bottom:8px;">Pro 플랜</h3>
-            <p style="color:#6b7280;font-size:14px;">추가 기능으로 운영 강화</p>
-          </div>
-          
-          <div style="border-top:2px solid #f3f4f6;padding-top:20px;">
-            <div style="margin-bottom:16px;">
-              <div style="display:flex;align-items:center;gap:8px;margin-bottom:8px;">
-                <span style="color:#f59e0b;font-size:18px;font-weight:bold;">✓</span>
-                <strong style="font-size:14px;">게시물 무제한</strong>
-              </div>
-              <p style="color:#6b7280;font-size:13px;margin-left:26px;line-height:1.5;">무료: 최대 50개 제한</p>
-            </div>
-            
-            <div style="margin-bottom:16px;">
-              <div style="display:flex;align-items:center;gap:8px;margin-bottom:8px;">
-                <span style="color:#f59e0b;font-size:18px;font-weight:bold;">✓</span>
-                <strong style="font-size:14px;">기록 다운로드</strong>
-              </div>
-              <p style="color:#6b7280;font-size:13px;margin-left:26px;line-height:1.5;">CSV/Excel 형식 저장</p>
-            </div>
-            
-            <div style="margin-bottom:16px;">
-              <div style="display:flex;align-items:center;gap:8px;margin-bottom:8px;">
-                <span style="color:#f59e0b;font-size:18px;font-weight:bold;">✓</span>
-                <strong style="font-size:14px;">고급 관리 기능</strong>
-              </div>
-              <p style="color:#6b7280;font-size:13px;margin-left:26px;line-height:1.5;">상세 통계 및 분석</p>
-            </div>
-            
-            <div style="background:linear-gradient(135deg,#fef3c7,#fde68a);border-radius:8px;padding:16px;margin-top:16px;text-align:center;">
-              <p style="font-size:24px;font-weight:700;color:#92400e;margin-bottom:4px;">₩7,000</p>
-              <p style="font-size:12px;color:#78350f;">월 1명 기준</p>
+              <p style="color:#6b7280;font-size:13px;margin-left:30px;line-height:1.6;">모든 게시물 삭제</p>
             </div>
           </div>
         </article>
         
       </div>
       
-      <div style="background:linear-gradient(135deg,#f0f9ff,#e0f2fe);border-left:4px solid #0ea5e9;padding:20px;border-radius:12px;margin-top:32px;">
-        <p style="color:#0c4a6e;font-size:14px;line-height:1.8;margin:0;">
+      <div style="background:linear-gradient(135deg,#f0f9ff,#e0f2fe);border-left:4px solid #0ea5e9;padding:24px;border-radius:12px;margin-top:40px;">
+        <p style="color:#0c4a6e;font-size:15px;line-height:1.8;margin:0;">
           <strong>💡 참고:</strong> 교사 권한은 ZEP 맵에서 <strong>스태프(역할 2000 이상)</strong>로 설정된 사용자에게 자동으로 부여됩니다. 
-          Pro 플랜은 학교 단위 구독을 통해 더 많은 학생들과 효과적으로 소통할 수 있습니다.
+          학생과 교사는 각자의 권한에 따라 학생 게시판을 효과적으로 활용할 수 있습니다.
         </p>
       </div>
     </section>
@@ -717,37 +675,22 @@
       </div>
 
       <article class="card">
-        <div class="flex" style="margin-bottom:20px;">
-          <h3>⚙️ 고급 설정 및 데이터 관리</h3>
-          <span class="badge premium">Pro 플랜 전용</span>
-        </div>
+        <h3>⚙️ 고급 설정 및 데이터 관리</h3>
         
         <p style="color:var(--text-muted);margin-bottom:20px;line-height:1.6;">
-          학생 게시판 설정 패널의 <strong>'고급 설정'</strong> 섹션은 Pro 플랜 구독 시 활성화됩니다.
+          학생 게시판 설정 패널의 <strong>'고급 설정'</strong> 섹션에서 데이터를 관리할 수 있습니다.
         </p>
         
-        <table class="table">
-          <thead>
-            <tr>
-              <th style="width:180px;">기능</th>
-              <th>설명</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr>
-              <td><strong>게시물 수 무제한</strong></td>
-              <td>Pro 플랜 구독 시 게시물 수 제한(50개)이 해제되어 <strong>무제한</strong>으로 작성할 수 있습니다.</td>
-            </tr>
-            <tr>
-              <td><strong>게시물 기록 다운로드</strong></td>
-              <td>CSV/Excel 파일로 모든 학생 게시판 내역(작성자 이름, 내용, 작성 시간)을 다운로드하여 학생 활동 기록을 보관할 수 있습니다.</td>
-            </tr>
-            <tr>
-              <td><strong>학생 게시판 전체 초기화</strong></td>
-              <td>모든 게시물을 영구 삭제하고 초기 상태로 되돌립니다. <strong style="color:var(--danger);">신중하게 사용</strong>해야 합니다.</td>
-            </tr>
-          </tbody>
-        </table>
+        <ul class="spec">
+          <li>
+            <div class="k">게시물 기록 다운로드</div>
+            <div class="v">CSV/Excel 파일로 모든 학생 게시판 내역(작성자 이름, 내용, 작성 시간)을 다운로드하여 학생 활동 기록을 보관할 수 있습니다.</div>
+          </li>
+          <li>
+            <div class="k">학생 게시판 전체 초기화</div>
+            <div class="v">모든 게시물을 영구 삭제하고 초기 상태로 되돌립니다. <strong style="color:var(--danger);">신중하게 사용</strong>해야 합니다.</div>
+          </li>
+        </ul>
         
         <p class="note warning">
           <strong>⚠️ 주의:</strong> 전체 초기화는 되돌릴 수 없으므로, 반드시 기록 다운로드 후 실행하시기 바랍니다.
@@ -780,14 +723,10 @@
               <div class="k">비속어 필터</div>
               <div class="v">시스템에 내장된 비속어 목록을 기반으로 자동 필터링되며, 비속어 포함 시 작성이 차단됩니다.</div>
             </li>
-            <li>
-              <div class="k">게시물 수</div>
-              <div class="v">무료 플랜: 총 게시물 수가 <strong>50개</strong>를 초과하면 더 이상 작성할 수 없습니다.</div>
-            </li>
           </ul>
           
-          <p class="note warning">
-            <strong>💡 안내:</strong> Pro 플랜 구독 시 게시물 수 제한이 해제됩니다.
+          <p class="note">
+            <strong>💡 안내:</strong> 건전한 내용으로 작성하면 교사의 승인을 통해 빠르게 게시됩니다.
           </p>
         </article>
         
