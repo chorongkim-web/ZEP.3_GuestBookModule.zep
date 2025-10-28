@@ -475,8 +475,8 @@
         📖
       </div>
     </div>
-    <h1>ZEP 학생 게시판 교사용 가이드</h1>
-    <p class="subtitle">GuestBook Module Instructor's Guide</p>
+    <h1>ZEP 학생 게시판 사용 가이드</h1>
+    <p class="subtitle">GuestBook Module User Guide</p>
   </header>
 
   <main>
@@ -810,8 +810,8 @@
         <div class="solution">
           <strong>해결 방법:</strong>
           <ul style="margin:8px 0 0 20px;line-height:1.8;">
-            <li>최신 버전의 ZEP 앱을 사용하고 있는지 확인해주세요.</li>
             <li>백그라운드에서 실행 중인 다른 앱을 종료하여 메모리를 확보해주세요.</li>
+            <li>브라우저를 최신 버전으로 업데이트해주세요.</li>
             <li>가능하면 PC 환경에서 사용하는 것을 권장합니다.</li>
           </ul>
         </div>
@@ -904,16 +904,37 @@
     <section id="contact">
       <article class="card" style="text-align:center;padding:40px;">
         <h3 style="margin-bottom:20px;">추가 문의 사항</h3>
-        <p style="color:var(--text-muted);line-height:1.8;margin-bottom:24px;">
-          학생 게시판 모듈 사용 중 궁금한 점이나 기술적인 문제가 있으시면<br>
-          ZEP 고객지원센터로 문의해주시기 바랍니다.
+        <p style="color:var(--text-muted);line-height:1.8;margin-bottom:32px;">
+          학생 게시판 사용 중 궁금한 점이나 기술적인 문제가 있으시면<br>
+          아래 버튼을 눌러 실시간으로 문의해주세요.
         </p>
-        <div style="background:var(--bg);padding:20px;border-radius:var(--radius-sm);display:inline-block;">
-          <p style="font-weight:600;margin-bottom:8px;">ZEP 고객지원센터</p>
-          <p style="color:var(--brand);font-size:18px;font-weight:600;">support@zep.us</p>
-        </div>
+        <button onclick="ChannelIO('showMessenger')" style="background:linear-gradient(135deg,#8b5cf6,#7c3aed);color:white;border:none;padding:16px 40px;border-radius:12px;font-size:18px;font-weight:700;cursor:pointer;box-shadow:0 4px 16px rgba(139,92,246,.3);transition:all 0.3s ease;display:inline-flex;align-items:center;gap:12px;">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M20 2H4C2.9 2 2 2.9 2 4V22L6 18H20C21.1 18 22 17.1 22 16V4C22 2.9 21.1 2 20 2ZM20 16H6L4 18V4H20V16Z" fill="white"/>
+          </svg>
+          문의하기
+        </button>
+        <p style="color:var(--text-muted);font-size:14px;margin-top:20px;">
+          채팅 상담 가능 시간: 평일 09:00 - 18:00
+        </p>
       </article>
     </section>
   </main>
+
+  <!-- 채널톡 스크립트 -->
+  <script>
+    (function(){var w=window;if(w.ChannelIO){return w.console.error("ChannelIO script included twice.");}var ch=function(){ch.c(arguments);};ch.q=[];ch.c=function(args){ch.q.push(args);};w.ChannelIO=ch;function l(){if(w.ChannelIOInitialized){return;}w.ChannelIOInitialized=true;var s=document.createElement("script");s.type="text/javascript";s.async=true;s.src="https://cdn.channel.io/plugin/ch-plugin-web.js";var x=document.getElementsByTagName("script")[0];if(x.parentNode){x.parentNode.insertBefore(s,x);}}if(document.readyState==="complete"){l();}else{w.addEventListener("DOMContentLoaded",l);w.addEventListener("load",l);}})();
+    ChannelIO('boot', {
+      "pluginKey": "26103066-96bf-40fa-8e6c-fc7afba2378f"
+    });
+  </script>
+
+  <style>
+    /* 문의하기 버튼 호버 효과 */
+    button[onclick*="ChannelIO"]:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 6px 20px rgba(139,92,246,.4);
+    }
+  </style>
 </body>
 </html>
